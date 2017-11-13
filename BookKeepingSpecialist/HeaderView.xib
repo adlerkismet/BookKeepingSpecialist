@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WAY-lr-kqp" customClass="BillHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="28"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nU5-zf-tjF" userLabel="backgroundView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="28"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9I-3j-JtU">
+                            <rect key="frame" x="8" y="5.5" width="37.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCK-nL-lAY">
+                            <rect key="frame" x="329.5" y="5.5" width="37.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9362092949554105" green="0.9428845943570402" blue="0.96291049256192895" alpha="0.85538848458904104" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="x9I-3j-JtU" firstAttribute="centerY" secondItem="nU5-zf-tjF" secondAttribute="centerY" id="3MD-1X-opQ"/>
+                        <constraint firstAttribute="trailing" secondItem="YCK-nL-lAY" secondAttribute="trailing" constant="8" id="6rf-mT-4kd"/>
+                        <constraint firstItem="x9I-3j-JtU" firstAttribute="leading" secondItem="nU5-zf-tjF" secondAttribute="leading" constant="8" id="AYb-2m-Yyg"/>
+                        <constraint firstItem="YCK-nL-lAY" firstAttribute="centerY" secondItem="nU5-zf-tjF" secondAttribute="centerY" id="MzV-vJ-pOZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="nU5-zf-tjF" firstAttribute="top" secondItem="WAY-lr-kqp" secondAttribute="top" id="479-Jk-1lc"/>
+                <constraint firstAttribute="trailing" secondItem="nU5-zf-tjF" secondAttribute="trailing" id="XSq-Y2-RdY"/>
+                <constraint firstItem="nU5-zf-tjF" firstAttribute="leading" secondItem="WAY-lr-kqp" secondAttribute="leading" id="bET-Hd-z1l"/>
+                <constraint firstAttribute="bottom" secondItem="nU5-zf-tjF" secondAttribute="bottom" id="f86-mo-pud"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="x9I-3j-JtU" id="cud-HK-u8S"/>
+                <outlet property="valueLabel" destination="YCK-nL-lAY" id="htx-8v-Tbj"/>
+            </connections>
+            <point key="canvasLocation" x="5.5" y="378"/>
+        </view>
+    </objects>
+</document>
